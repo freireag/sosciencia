@@ -12,6 +12,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ProjetoDetalhePage } from '../pages/projeto-detalhe/projeto-detalhe';
+import { MobilizePage } from '../pages/mobilize/mobilize';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ProjetoDetalhePage } from '../pages/projeto-detalhe/projeto-detalhe';
     ImportanciaPage,
     OrcamentoPage,
     TabsPage,
-    ProjetoDetalhePage
+    ProjetoDetalhePage,
+    MobilizePage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { ProjetoDetalhePage } from '../pages/projeto-detalhe/projeto-detalhe';
     ImportanciaPage,
     OrcamentoPage,
     TabsPage,
-    ProjetoDetalhePage
+    ProjetoDetalhePage,
+    MobilizePage
   ],
   providers: [
     StatusBar,

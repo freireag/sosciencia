@@ -31,7 +31,7 @@ export class ProjetosPage {
     });
   }
 
-  openSobre() {
+  public openSobre() {
     this.navCtrl.push('SobrePage');
   }
 

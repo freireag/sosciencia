@@ -31,4 +31,8 @@ export class ProjetosPage {
     });
   }
 
+  openSobre() {
+    this.navCtrl.push('SobrePage');
+  }
+
 }

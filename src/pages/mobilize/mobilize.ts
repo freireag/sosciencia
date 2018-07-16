@@ -17,4 +17,8 @@ export class MobilizePage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  openSobre() {
+    this.navCtrl.push('SobrePage')
+  }
+
 }

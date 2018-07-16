@@ -38,4 +38,8 @@ export class OrcamentoPage {
 
     this.renderer.appendChild(body, script);
   }
+
+  openSobre() {
+    this.navCtrl.push('SobrePage');
+  }
 }

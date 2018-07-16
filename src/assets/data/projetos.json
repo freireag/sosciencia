@@ -1,0 +1,66 @@
+{
+    "projetos":[
+        {
+            "id":"aedes",
+            "nome":"Controle do Aedes aegypti",
+            "imagem":"",
+            "paragrafos":[
+                "Uma das pesquisas do Núcleo de Ecologia e Desenvolvimento Socioambiental, da UFRJ em Macaé, tenta entender como um embrião de Aedes aegypti vai de uma única célula para a forma de larva.",
+                "A partir daí os cientistas vão poder retirar genes dos embriões e reduzir de forma significativa a população do mosquito. Mas o laboratório não tem dinheiro para insumos."
+            ]
+        },
+        {
+            "id":"santos-dumont",
+            "nome":"Computador Santos Dumont",
+            "imagem":"",
+            "paragrafos":[
+                "Abrigado em Petrópolis, é o mais potente supercomputador brasileiro e um dos mais velozes do mundo, com capacidade de processamento de 1,1 petaflops por segundo.",
+                "É essencial para diversas pesquisas, como evolução da galáxia, busca de medicamentos e vacinas e modelos computacionais diversos.",
+                "Apenas sua conta de luz é de R$ 500 mil por mês. Um remanejamento e liberação de mais recursos pelo Ministério da Ciência evitou seu desligamento em 2017."   
+            ]
+        },
+        {
+            "id":"sirius",
+            "nome":"Acelerador de partículas",
+            "imagem":"",
+            "paragrafos":[
+                "Quando estiver pronto, o acelerador de partículas Sirius será o equipamento mais avançado do mundo na geração de luz síncrotron, que permite o estudo de praticamente qualquer material na escala atômica.",
+                "Já em fase avançada de construção, em Campinas, a previsão é que esteja pronto para testes em 2019 e em operação total em 2020. Com orçamento de R$ 1,5 bilhão, o equipamento esbarra nos cortes do governo.",
+                "O dinheiro do Sirius vem do Programa de Aceleração do Crescimento (PAC), mas os cortes na ciência reduziram em 40% o orçamento do Centro Nacional de Pesquisa em Energia e Materiais (CNPEM), equipe gestora do acelerador, o que atrasou o projeto."
+            ]
+        },
+        {
+            "id":"inpa",
+            "nome":"Instituto Nacional de Pesquisas da Amazônia",
+            "imagem":"",
+            "paragrafos":[
+                "Desde 1954 realiza estudos científicos na Amazônia, para promover o bem-estar da população e o desenvolvimento socioeconômico. Responsável por levantamentos de fauna e flora, é referência mundial em Biologia Tropical. Em 2017, perdeu 62% de seu orçamento."
+            ]
+        },
+        {
+            "id":"inct",
+            "nome":"INCTs",
+            "imagem":"",
+            "paragrafos":[
+                "Os Institutos Nacionais de Ciência e Tecnologia (INCTs) são conjuntos de grupos de pesquisa para criar uma rede nacional de referência em áreas estratégicas da ciência. Com a queda do orçamento do CNPq, alguns deles foram cortados.",
+                "É o caso dos INCTs de HIV-AIDS, mesmo com o ressurgimento da doença no Brasil, e o de Tecnologias da Saúde."
+            ]
+        },
+        {
+            "id":"inpe",
+            "nome":"Instituto Nacional de Pesquisas Espaciais",
+            "imagem":"",
+            "paragrafos":[
+                "Responsável pelo monitoramento da Terra e por serviços de meteorologia, teve redução orçamentária de 40% em 2017."
+            ]
+        },
+        {
+            "id":"cbpf",
+            "nome":"Centro Brasileiro de Pesquisas Físicas",
+            "imagem":"",
+            "paragrafos":[
+                "Primeira instituição voltada para a ciência básica no país, hoje faz pesquisa em áreas como energia, nanotecnologia e biomedicina. Não há dinheiro para fazer manutenção dos equipamentos, que custam R$ 100 milhões. Também falta pessoal de limpeza e segurança."
+            ]
+        }
+    ]
+}

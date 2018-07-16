@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ProjetoDetalhePage } from '../pages/projeto-detalhe/projeto-detalhe';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProjetosPage,
     ImportanciaPage,
     OrcamentoPage,
-    TabsPage
+    TabsPage,
+    ProjetoDetalhePage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProjetosPage,
     ImportanciaPage,
     OrcamentoPage,
-    TabsPage
+    TabsPage,
+    ProjetoDetalhePage
   ],
   providers: [
     StatusBar,

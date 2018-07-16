@@ -8,7 +8,7 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item  *ngFor="let projeto of projetos">
+    <button ion-item  *ngFor="let projeto of projetos" (click)="openDetail(projeto)">
       {{ projeto.nome }}
     </button>
   </ion-list>

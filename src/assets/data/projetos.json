@@ -12,7 +12,7 @@
         {
             "id":"santos-dumont",
             "nome":"Computador Santos Dumont",
-            "imagem":"",
+            "imagem":"assets/imgs/projetos/santos-dumont.jpg",
             "paragrafos":[
                 "Abrigado em Petrópolis, é o mais potente supercomputador brasileiro e um dos mais velozes do mundo, com capacidade de processamento de 1,1 petaflops por segundo.",
                 "É essencial para diversas pesquisas, como evolução da galáxia, busca de medicamentos e vacinas e modelos computacionais diversos.",
@@ -22,7 +22,7 @@
         {
             "id":"sirius",
             "nome":"Acelerador de partículas",
-            "imagem":"",
+            "imagem":"assets/imgs/projetos/sirius.jpg",
             "paragrafos":[
                 "Quando estiver pronto, o acelerador de partículas Sirius será o equipamento mais avançado do mundo na geração de luz síncrotron, que permite o estudo de praticamente qualquer material na escala atômica.",
                 "Já em fase avançada de construção, em Campinas, a previsão é que esteja pronto para testes em 2019 e em operação total em 2020. Com orçamento de R$ 1,5 bilhão, o equipamento esbarra nos cortes do governo.",

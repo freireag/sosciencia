@@ -27,7 +27,9 @@ import { MobilizePage } from '../pages/mobilize/mobilize';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {
+      mode: "ios"
+    }),
     HttpModule
   ],
   bootstrap: [IonicApp],

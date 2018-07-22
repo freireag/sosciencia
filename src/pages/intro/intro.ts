@@ -17,9 +17,18 @@ import { TabsPage } from '../tabs/tabs';
 export class IntroPage {
   @ViewChild(Slides) slides: Slides;
 
-  showSkip = true;
+  //showSkip = true;
+  nextMsg = "Próximo";
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  nextAction() {
+    if (this.slides.isEnd()) {
+      this.startApp();
+    } else {
+      this.slides.slideNext();
+    }
   }
 
   startApp() {
@@ -29,8 +38,16 @@ export class IntroPage {
     });
   }
 
-  updateShowSkip() {
+  /*updateShowSkip() {
     this.showSkip = !this.slides.isEnd();
+  }*/
+
+  updateNextMsg() {
+    if (this.slides.isEnd()) {
+      this.nextMsg = "Continuar";
+    } else {
+      this.nextMsg = "Próximo";
+    }
   }
 
 }

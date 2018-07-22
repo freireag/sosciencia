@@ -4,37 +4,74 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header no-border>
-
-  <ion-toolbar>
-    <ion-buttons end *ngIf="showSkip">
-      <button ion-button (click)="startApp()">Pular</button>
-    </ion-buttons>
-  </ion-toolbar>
-
-</ion-header>
-
 
 <ion-content padding>
-  <ion-slides pager (ionSlideDidChange)="updateShowSkip()">
+  <ion-slides pager [zoom]="false" (ionSlideDidChange)="updateNextMsg()">
     <ion-slide>
-      <p>
-        A ciência brasileira pede socorro! O governo federal vem cortando os recursos para a área: o orçamento para 2018 é <strong>um terço</strong> do que foi em 2011, com a correção da inflação.
-      </p>
-    </ion-slide>
-    <ion-slide>
+      <div class="icon-box">
+        <ion-icon name="md-trending-down" color="light"></ion-icon>
+      </div>
+      <div class="slide-text">
+        <h2>A ciência pede socorro!</h2>
         <p>
-          Projetos importantes para o desenvolvimento do país e a qualidade de vida da população estão parados ou correm grande risco! Veja aqui no <strong>SOS Ciência</strong> de onde vem o dinheiro para os laboratórios e o quanto foi cortado.
+          O governo federal vem cortando os recursos para a área: o orçamento de 2018 é
+          <strong>um terço</strong> do que foi em 2011, com a correção da inflação.
         </p>
+      </div>
     </ion-slide>
+
     <ion-slide>
+      <div class="icon-box">
+        <ion-icon name="md-cut" color="light"></ion-icon>
+      </div>
+      <div class="slide-text">
+        <h2>Cortes e mais cortes</h2>
         <p>
-          Se você ainda não está convencido de que a ciência brasileira faz diferença na sua vida, experimente nosso Quiz ou veja o que os cientistas têm a dizer. E #LutePelaCiência!
+          Projetos importantes para o desenvolvimento do país e a qualidade de vida da população estão parados ou correm grande risco!
         </p>
-        <button ion-button icon-end large clear (click)="startApp()">
-            Continuar
-            <ion-icon name="arrow-forward"></ion-icon>
-        </button>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="icon-box">
+        <ion-icon name="phone-portrait" color="light"></ion-icon>
+      </div>
+      <div class="slide-text">
+        <h2>Entenda a questão</h2>
+        <p>
+          Veja aqui no <strong>SOS Ciência</strong> como funciona o orçamento, o quanto foi cortado e quais projetos foram prejudicados.
+        </p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="icon-box">
+        <ion-icon name="md-happy" color="light"></ion-icon>
+      </div>
+      <div class="slide-text">
+        <h2>Divirta-se</h2>
+        <p>
+          Acesse ainda nosso Quiz para testar se você conhece a ciência brasileira, e leia frases de cientistas importantes sobre o
+          assunto.
+        </p>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="icon-box">
+        <ion-icon name="ios-walk" color="light"></ion-icon>
+      </div>
+      <div class="slide-text">
+        <h2>E se mobilize!</h2>
+        <p>
+          Contate as entidades que estão organizando protestos e se junte à campanha compartilhando nosso app. 
+          <br /><strong>#LutePelaCiência</strong>
+        </p>
+      </div>
     </ion-slide>
   </ion-slides>
 </ion-content>
+
+<ion-footer>
+  <button ion-button full no-margin (click)="nextAction()">{{ nextMsg }}</button>
+</ion-footer>

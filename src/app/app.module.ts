@@ -28,7 +28,8 @@ import { MobilizePage } from '../pages/mobilize/mobilize';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp, {
-      mode: "ios"
+      mode: "ios",
+      backButtonText: " Voltar"
     }),
     HttpModule
   ],

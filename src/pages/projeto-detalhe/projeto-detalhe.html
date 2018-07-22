@@ -15,7 +15,7 @@
 
 <ion-content padding>
   <ion-card>
-    <img src="{{ projeto.imagem }}" alt="" />
+    <img src="{{ projeto.imagem }}" alt="" *ngIf="projeto.id != 'inct'" />
     <ion-card-content>
       <ion-card-title>
         <strong>{{ projeto.nome }}</strong>
@@ -24,7 +24,10 @@
   </ion-card-content>
   </ion-card>
 
-  <ion-card padding *ngFor="let p of projeto.paragrafos.slice(1)">
-    {{ p }}
+  <ion-card *ngFor="let p of projeto.paragrafos.slice(1)">
+    <img src="{{ projeto.imagem }}" alt="" *ngIf="projeto.id == 'inct'" />
+    <ion-card-content>
+      {{ p }}
+    </ion-card-content>
   </ion-card>
 </ion-content>

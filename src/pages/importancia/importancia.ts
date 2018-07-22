@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Http } from '../../../node_modules/@angular/http';
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'page-importancia',
@@ -7,12 +9,20 @@ import { NavController } from 'ionic-angular';
 })
 export class ImportanciaPage {
 
-  constructor(public navCtrl: NavController) {
+  frases: any;
 
+  constructor(public navCtrl: NavController, public http: Http) {
+    
   }
 
-  openSobre() {
-    this.navCtrl.push('SobrePage');
+  ionViewDidLoad() {
+    this.loadItems();
+  }
+
+  loadItems() {
+    this.http.get('assets/data/frases.json').map(res => res.json()).subscribe(data => {
+      this.frases = data.frases;
+    })
   }
 
 }

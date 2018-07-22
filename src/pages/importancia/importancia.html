@@ -12,11 +12,21 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
+
+  <ion-card *ngFor="let frase of frases">
     <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+      <ion-avatar item-start>
+        <img src="{{ frase.avatar }}" />
+      </ion-avatar>
+      <h2>{{ frase.nome }}</h2>
+      <p>{{ frase.titulo }}</p>
     </ion-item>
-  </ion-list>
+
+    <ion-card-content>
+      <p>
+        {{ frase.texto }}
+      </p>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>

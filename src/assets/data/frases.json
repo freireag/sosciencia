@@ -1,0 +1,46 @@
+{
+    "frases": [
+        {
+            "nome": "Luiz Davidovich",
+            "avatar": "",
+            "titulo": "Presidente da ABC",
+            "texto": "No mundo contemporâneo, o desenvolvimento é baseado em ciência e tecnologia, e o fato de nós estarmos nos atrasando nessa área, significa que vamos perder cada vez mais o protagonismo internacional."
+        },
+        {
+            "nome": "João Fernandes Oliveira",
+            "avatar": "",
+            "titulo": "Vice-Presidente da ABC",
+            "texto": "Você cria uma cultura em que você paga salário, mas não dá recursos para desenvolver uma pesquisa. É como abrir um restaurante, contratar o melhor cozinheiro, e não dar os ingredientes para ele fazer a comida."
+        },
+        {
+            "nome": "Ildeu Moreira",
+            "avatar": "",
+            "titulo": "Presidente da SBPC",
+            "texto": "A gente teve um corte muito grande, em particular nos dois últimos anos. Estamos com um orçamento pra ciência e tecnologia cerca de um terço do que tínhamos 8 anos atrás. Então é completamente absurdo, é catastrófico."
+        },
+        {
+            "nome": "Antônio José Roque",
+            "avatar": "",
+            "titulo": "Diretor do LNLS",
+            "texto": "O Brasil está correndo um risco gigantesco de prejudicar de forma bastante séria um esforço de décadas. Em poucos anos você consegue destruir tudo isso: construir é muito difícil, destruir é muito mais fácil."
+        },
+        {
+            "nome": "Olival Freire",
+            "avatar": "",
+            "titulo": "Pró-reitor da Ufba",
+            "texto": "A dificuldade maior ainda vem adiante, porque a pesquisa de laboratório que depende de insumos químicos e biológicos, boa parte dos grupos tinham projetos com o CNPq, com a Fapesb, e esses recursos acabaram ou estão acabando."
+        },
+        {
+            "nome": "Celina Turchi",
+            "avatar": "",
+            "titulo": "Pesquisadora da Fiocruz",
+            "texto": "Pesquisa em saúde pública não é luxo, é uma questão de segurança nacional. É um tipo de investimento que não pode ser cortado ou minimizado."
+        },
+        {
+            "nome": "Rodrigo Fonseca",
+            "avatar": "",
+            "titulo": "Pesquisador de Biologia da UFRJ",
+            "texto": "O país investiu milhões em equipamentos de primeiro mundo, mas eu não tenho dinheiro para comprar um tubinho de plástico."
+        }
+    ]
+}

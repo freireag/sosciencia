@@ -25,4 +25,8 @@ export class ImportanciaPage {
     })
   }
 
+  openSobre() {
+    this.navCtrl.push('SobrePage');
+  }
+
 }

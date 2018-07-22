@@ -18,7 +18,7 @@ export class MobilizePage {
   }
 
   openSobre() {
-    this.navCtrl.push('SobrePage')
+    this.navCtrl.push('SobrePage');
   }
 
 }

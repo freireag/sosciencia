@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { Http } from '../../../node_modules/@angular/http';
+import 'rxjs/add/operator/map';
 
 /**
  * Generated class for the MobilizePage page.
@@ -14,7 +16,19 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class MobilizePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  entidades: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
+  }
+
+  ionViewDidLoad() {
+    this.loadItems();
+  }
+
+  loadItems() {
+    this.http.get('assets/data/entidades.json').map(res => res.json()).subscribe(data => {
+      this.entidades = data.entidades;
+    })
   }
 
   openSobre() {

@@ -36,75 +36,29 @@
     Algumas entidades organizam as mobilizações em defesa da ciência, confira seus endereços na web e contatos:
   </p>
   
-  <ion-card>
+  <ion-card *ngFor="let entidade of entidades">
     <ion-card-content>
       <ion-card-title>
-        <strong>SBPC</strong>
+        <strong>{{ entidade.sigla }}</strong>
       </ion-card-title>
-      Rua Maria Antonia 294 – 4º andar, Vila Buarque, São Paulo, SP
+      <h2>{{ entidade.nome }}</h2>
       <br />
+      <p>{{ entidade.endereco }}</p>
       <ion-row no-padding>
         <ion-col>
           <button ion-button clear small icon-start>
             <ion-icon name="call" color="primary"></ion-icon>
-            (11) 3259-2766
+            {{ entidade.telefone }}
           </button>
         </ion-col>
         <ion-col>
           <button ion-button clear small icon-start>
               <ion-icon name='share-alt'></ion-icon>
-              Site
+              <a href="{{ entidade.site }}" target="_blank" style="text-decoration: none;">Site</a>
           </button>
       </ion-col>
     </ion-row>
     </ion-card-content>
   </ion-card>
 
-  <ion-card>
-      <ion-card-content>
-        <ion-card-title>
-          <strong>ABC</strong>
-        </ion-card-title>
-        Rua Anfilófio de Carvalho, 29 – 3º Andar, Centro – Rio de Janeiro, RJ – Brasil
-        <br />
-        <ion-row no-padding>
-          <ion-col>
-            <button ion-button clear small icon-start>
-              <ion-icon name="call" color="primary"></ion-icon>
-              (21) 3907-8100
-            </button>
-          </ion-col>
-          <ion-col>
-            <button ion-button clear small icon-start>
-                <ion-icon name='share-alt'></ion-icon>
-                Site
-            </button>
-        </ion-col>
-      </ion-row>
-      </ion-card-content>
-    </ion-card>
-
-    <ion-card>
-        <ion-card-content>
-          <ion-card-title>
-            <strong>ANPG</strong>
-          </ion-card-title>
-          Rua Vergueiro, 2485, Vila Mariana, São Paulo – SP
-          <br />
-          <ion-row no-padding>
-            <ion-col>
-              <button ion-button clear small icon-start>
-                <ion-icon name="call" color="primary"></ion-icon>
-                (11) 5082-3691
-              </button>
-            </ion-col>
-            <ion-col>
-              <button ion-button clear small icon-start>
-                  <ion-icon name='share-alt'></ion-icon>
-                  Site
-              </button>
-          </ion-col>
-        </ion-row>
-        </ion-card-content>
-      </ion-card>
 </ion-content>

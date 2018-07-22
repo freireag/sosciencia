@@ -1,0 +1,40 @@
+<!--
+  Generated template for the IntroPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+  <ion-toolbar>
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()">Pular</button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-slides pager (ionSlideDidChange)="updateShowSkip()">
+    <ion-slide>
+      <p>
+        A ciência brasileira pede socorro! O governo federal vem cortando os recursos para a área: o orçamento para 2018 é <strong>um terço</strong> do que foi em 2011, com a correção da inflação.
+      </p>
+    </ion-slide>
+    <ion-slide>
+        <p>
+          Projetos importantes para o desenvolvimento do país e a qualidade de vida da população estão parados ou correm grande risco! Veja aqui no <strong>SOS Ciência</strong> de onde vem o dinheiro para os laboratórios e o quanto foi cortado.
+        </p>
+    </ion-slide>
+    <ion-slide>
+        <p>
+          Se você ainda não está convencido de que a ciência brasileira faz diferença na sua vida, experimente nosso Quiz ou veja o que os cientistas têm a dizer. E #LutePelaCiência!
+        </p>
+        <button ion-button icon-end large clear (click)="startApp()">
+            Continuar
+            <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

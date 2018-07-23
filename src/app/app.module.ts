@@ -6,13 +6,15 @@ import { MyApp } from './app.component';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { ProjetosPage } from '../pages/projetos/projetos';
+import { ProjetoDetalhePage } from '../pages/projeto-detalhe/projeto-detalhe';
 import { OrcamentoPage } from '../pages/orcamento/orcamento';
 import { MobilizePage } from '../pages/mobilize/mobilize';
 import { FrasesPage } from '../pages/frases/frases';
-import { ProjetoDetalhePage } from '../pages/projeto-detalhe/projeto-detalhe';
+import { QuizPage } from '../pages/quiz/quiz';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     OrcamentoPage,
     TabsPage,
     ProjetoDetalhePage,
-    MobilizePage
+    MobilizePage,
+    QuizPage
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     OrcamentoPage,
     TabsPage,
     ProjetoDetalhePage,
-    MobilizePage
+    MobilizePage,
+    QuizPage
   ],
   providers: [
     StatusBar,

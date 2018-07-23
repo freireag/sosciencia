@@ -1,5 +1,5 @@
 import { Component, Renderer2 } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, Platform } from 'ionic-angular';
 
 @Component({
   selector: 'page-orcamento',
@@ -7,11 +7,21 @@ import { NavController } from 'ionic-angular';
 })
 export class OrcamentoPage {
 
-  constructor(public navCtrl: NavController, private renderer: Renderer2) {
+  constructor(public navCtrl: NavController, private renderer: Renderer2, public plt: Platform) {
 
   }
 
   ionViewDidLoad() {
+    if (!this.isSmall()) {
+      this.renderInfogram();
+    }
+  }
+
+  isSmall() {
+    return this.plt.width() < 400;
+  }
+
+  renderInfogram() {
     /*!function(e,t,n,s) {
       var i="InfogramEmbeds",
         o=e.getElementsByTagName(t)[0],
@@ -22,8 +32,7 @@ export class OrcamentoPage {
         var a=e.createElement(t);a.async=1,a.id=n,a.src=s,o.parentNode.insertBefore(a,o)
       }
     } (document,"script","infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");*/
-    
-    
+
     var page = this.navCtrl.first().pageRef().nativeElement;
     var parent = page;
     for (let num of Array(7)) {

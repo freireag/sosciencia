@@ -18,7 +18,7 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
   <ion-fab bottom right>
     <button ion-fab color="danger">
       <ion-icon name="md-share"></ion-icon>
@@ -29,12 +29,14 @@
   </ion-fab-list>
   </ion-fab>
 
-  <p>
-    Junte-se à campanha <strong>#LutePelaCiência</strong>! Toque no botão abaixo para publicar nas suas redes sociais seu apoio à ciência brasileira.
-  </p>
-  <p>
-    Algumas entidades organizam as mobilizações em defesa da ciência, confira seus endereços na web e contatos:
-  </p>
+  <div padding-horizontal>
+    <p>
+      Junte-se à campanha <strong>#LutePelaCiência</strong>! Toque no botão abaixo para publicar nas suas redes sociais seu apoio à ciência brasileira.
+    </p>
+    <p>
+      Algumas entidades organizam as mobilizações em defesa da ciência, confira seus endereços na web e contatos:
+    </p>
+  </div>
   
   <ion-card *ngFor="let entidade of entidades">
     <ion-card-content>

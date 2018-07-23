@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { ProjetosPage } from '../projetos/projetos';
-import { ImportanciaPage } from '../importancia/importancia';
+import { FrasesPage } from '../frases/frases';
 import { OrcamentoPage } from '../orcamento/orcamento';
 import { MobilizePage } from '../mobilize/mobilize';
 
@@ -12,7 +12,7 @@ export class TabsPage {
 
   tab1Root = OrcamentoPage;
   tab2Root = ProjetosPage;
-  tab3Root = ImportanciaPage;
+  tab3Root = FrasesPage;
   tab4Root = MobilizePage;
 
   constructor() {

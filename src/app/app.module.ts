@@ -4,22 +4,22 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { HttpModule } from '../../node_modules/@angular/http';
 import { MyApp } from './app.component';
 
-import { ProjetosPage } from '../pages/projetos/projetos';
-import { ImportanciaPage } from '../pages/importancia/importancia';
-import { OrcamentoPage } from '../pages/orcamento/orcamento';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ProjetosPage } from '../pages/projetos/projetos';
+import { OrcamentoPage } from '../pages/orcamento/orcamento';
+import { MobilizePage } from '../pages/mobilize/mobilize';
+import { FrasesPage } from '../pages/frases/frases';
+import { ProjetoDetalhePage } from '../pages/projeto-detalhe/projeto-detalhe';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ProjetoDetalhePage } from '../pages/projeto-detalhe/projeto-detalhe';
-import { MobilizePage } from '../pages/mobilize/mobilize';
 
 
 @NgModule({
   declarations: [
     MyApp,
     ProjetosPage,
-    ImportanciaPage,
+    FrasesPage,
     OrcamentoPage,
     TabsPage,
     ProjetoDetalhePage,
@@ -37,7 +37,7 @@ import { MobilizePage } from '../pages/mobilize/mobilize';
   entryComponents: [
     MyApp,
     ProjetosPage,
-    ImportanciaPage,
+    FrasesPage,
     OrcamentoPage,
     TabsPage,
     ProjetoDetalhePage,

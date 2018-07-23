@@ -4,10 +4,10 @@ import { Http } from '../../../node_modules/@angular/http';
 import 'rxjs/add/operator/map';
 
 @Component({
-  selector: 'page-importancia',
-  templateUrl: 'importancia.html'
+  selector: 'page-frases',
+  templateUrl: 'frases.html'
 })
-export class ImportanciaPage {
+export class FrasesPage {
 
   frases: any;
 

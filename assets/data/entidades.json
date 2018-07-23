@@ -1,0 +1,25 @@
+{
+    "entidades": [
+        {
+            "nome": "Sociedade Brasileira para o Progresso da Ciência",
+            "sigla": "SBPC",
+            "endereco": "Rua Maria Antonia 294 – 4º andar, Vila Buarque, São Paulo, SP.",
+            "telefone": "(11) 3259-2766",
+            "site": "http://sbpc.org.br"
+        },
+        {
+            "nome": "Academia Brasileira de Ciências",
+            "sigla": "ABC",
+            "endereco": "Rua Anfilófio de Carvalho, 29 – 3º Andar, Centro, Rio de Janeiro, RJ.",
+            "telefone": "(21) 3907-8100",
+            "site": "http://abc.org.br"
+        },
+        {
+            "nome": "Associação Nacional de Pós-Graduandos",
+            "sigla": "ANPG",
+            "endereco": "Rua Vergueiro, 2485, Vila Mariana, São Paulo – SP.",
+            "telefone": "(11) 5082-3691",
+            "site": "http://anpg.org.br"
+        }
+    ]
+}
